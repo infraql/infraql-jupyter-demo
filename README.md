@@ -24,3 +24,7 @@ docker run -dp 8888:8888 infraql-jupyter-demo start-notebook.sh --NotebookApp.to
 ```shell
 docker stop $(docker ps -l -q --filter status=running --filter ancestor=infraql-jupyter-demo)
 ```
+
+## Example
+
+![Example Notebook](images/example-notebook.png)

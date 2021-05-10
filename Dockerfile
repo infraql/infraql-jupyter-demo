@@ -20,6 +20,9 @@ RUN curl -XGET https://storage.googleapis.com/infraql-downloads/infraql_linux_am
 COPY ./keys /keys
 COPY ./example.ipynb /work
 
+RUN chmod 644 example.ipynb && \
+    chown jovyan:users example.ipynb
+
 ENV PYTHON_PACKAGES="\
     matplotlib \
     pandas \
