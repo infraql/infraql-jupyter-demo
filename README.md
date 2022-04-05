@@ -1,5 +1,7 @@
 # InfraQL Jupyter Demo
 
+> __*This repository has been archived.  The active project is now located at [StackQL Jupyter Demo](https://github.com/stackql/stackql-jupyter-demo)*__
+
 Query cloud inventory and perform analysis and visualisations using Jupyter and Python.
 
 ## Prerequisites
@@ -12,7 +14,7 @@ Query cloud inventory and perform analysis and visualisations using Jupyter and 
 2. Add the appropriate service account key for your environment to the `keys/` directory 
 3. Build the image:
 ```shell
-docker build -t infraql-jupyter-demo .
+docker build --no-cache -t infraql-jupyter-demo .
 ```
 4. Run the image:
 ```shell
